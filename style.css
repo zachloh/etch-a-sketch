@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+  background-color: #afeeee;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.outer-border {
+  height: 800px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f40c00;
+  box-shadow: inset 0 0 15px #000;
+  border-radius: 30px;
+}
+
+div.title {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-family: 'Niconne', cursive;
+  font-size: 70px;
+  color: #ffe6c9;
+}
+
+div.screen-outer {
+  height: 600px;
+  width: 600px;
+  background-color: #cdcdcd;
+  box-shadow: inset 0 0 10px black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.screen-inner {
+  height: 590px;
+  width: 590px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.grid {
+  border: 1px solid #dfdfdf; 
+  background-color: #cdcdcd; 
+}
+
+div.settings {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slidecontainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 10px;
+  background: #ffe6c9;
+  border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%;
+  background: #04AA6D; 
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%;
+  background: #04AA6D; 
+  cursor: pointer;
+}
+
+#slider-value {
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;;
+}
+
+.color-btn-container {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  background-color: #ffe6c9;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 10px;
+  border: none;
+  box-shadow: inset 0 0 5px black;
+  transition: all .1s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(1.2);
+}
+
+button.color.focus {
+  background-color: #fdfd96;
+}
