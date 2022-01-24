@@ -30,16 +30,6 @@ colorButtonsArray.forEach((button) => {
   });
 });
 
-function toggleFocusClass(colorButtonsArray, clickedButton) {
-  for (const button of colorButtonsArray) {
-    if (button === clickedButton) {
-      button.classList.add('focus');
-    } else {
-      button.classList.remove('focus');
-    }
-  }
-}
-
 eraseButton.addEventListener('click', () => {
   const gridDivs = document.querySelectorAll('div.grid');
   const gridsArray = [...gridDivs];
@@ -127,4 +117,14 @@ function getRandomColor() {
     color += LETTERS[Math.floor(Math.random() * 16)];
   }
   return color;
+}
+
+function toggleFocusClass(colorButtonsArray, clickedButton) {
+  for (const button of colorButtonsArray) {
+    if (button === clickedButton) {
+      button.classList.add('focus');
+    } else {
+      button.classList.remove('focus');
+    }
+  }
 }
